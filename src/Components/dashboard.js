@@ -5,7 +5,7 @@ import '.././dashboard.css';
 import Widgetcol from './widgetcol';
 import Widgettext from './widgettext';
 import Widgetdoughnut from './widgetdoughnut';
-import {Col,Row,Container,Nav,Navbar,Button,Form,FormControl} from 'react-bootstrap';
+import {Col,Row,Container} from 'react-bootstrap';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import 'react-dropdown/style.css';import 'react-dropdown/style.css';
 
@@ -138,7 +138,7 @@ componentDidMount() {
                     <Container fluid>
                         <Row className="TopHeader">
                             <Col><img height="50px" width="80px" src={logo} alt="Logo" /></Col>
-                            <Col><Dropdown className="dropdown" options={this.state.dropdownOptions} onChange={this.updateDashboard} value={this.state.defaultOption} placeholder="Select an option" /></Col>
+                            <Col><Dropdown className="dropdown" options={this.state.dropdownOptions} onChange={this.updateDashboard} value={this.state.selectedValue} placeholder="Select an option" /></Col>
                         </Row>
                     </Container>
                     <br/>
