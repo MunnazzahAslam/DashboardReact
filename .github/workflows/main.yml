@@ -30,4 +30,4 @@ jobs:
      
      #Deploy surge
       - name: Deploy surge 
-        run: surge ./build checkit.surge.sh --token ${{ secrets.SURGE_TOKEN }}
+        run: surge ./build canalytics.surge.sh --token ${{ secrets.SURGE_TOKEN }}
