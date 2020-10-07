@@ -1,5 +1,5 @@
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
-
+[![Run on Repl.it](https://repl.it/badge/github/MunnazzahAslam/DashboardReact)](https://repl.it/github/MunnazzahAslam/DashboardReact)
 ## Available Scripts
 
 In the project directory, you can run:
