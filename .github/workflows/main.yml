@@ -1,0 +1,33 @@
+#This is a basic workflow to help you get started with Actions
+
+name: react deploy
+
+on: [push]
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    name: Deploying to surge
+    steps:
+      - uses: actions/checkout@v2
+      - name: Install Node.js
+        uses: actions/setup-node@v2-beta
+        with:
+          node-version: 12
+      
+      #Install Yarn
+      - uses: borales/actions-yarn@v2.0.0
+        with:
+         cmd: install 
+     
+     #Build react with yarn
+      - name: Build react app
+        run: yarn build
+      
+     #Install surge
+      - name: Run surge
+        run: npm install --global surge
+     
+     #Deploy surge
+      - name: Deploy surge 
+        run: surge ./build tickit.surge.sh --token ${{ secrets.SURGE_TOKEN }}
