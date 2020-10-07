@@ -39,7 +39,7 @@ export class Dashboard extends Component {
     let pageViews = 0;
     let users=0;
     let newUsers=0;
-    let selectedValue=0;
+    let selectedValue=null;
     let trendStore = [];
     let usersArr = [];
     for (let i = 0; i < arrLen; i++) {
