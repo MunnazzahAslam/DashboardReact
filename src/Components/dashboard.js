@@ -7,7 +7,8 @@ import Widgettext from './widgettext';
 import Widgetdoughnut from './widgetdoughnut';
 import {Col,Row,Container} from 'react-bootstrap';
 import 'bootstrap/dist/css/bootstrap.min.css';
-import 'react-dropdown/style.css';import 'react-dropdown/style.css';
+import 'react-dropdown/style.css';
+import 'react-dropdown/style.css';
 
 const config = {
   apiKey: 'AIzaSyDMu-Vw30ykPPmFT3cXeunzKEi4EahzglI',
