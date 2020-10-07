@@ -24,7 +24,7 @@ export class Dashboard extends Component {
             items: [],
             dropdownOptions: [],
             trendStore: [],
-            selectedValue: null,
+            optedVal: null,
             organicSourceViews: null,
             directSourceViews: null,
         };
@@ -40,7 +40,7 @@ export class Dashboard extends Component {
     let pageViews = 0;
     let users=0;
     let newUsers=0;
-    let selectedValue = null;
+    let optedVal = null;
     let trendStore = [];
     let usersArr = [];
     for (let i = 0; i < arrLen; i++) {
@@ -77,7 +77,7 @@ export class Dashboard extends Component {
             });
         }
     }
-    selectedValue = arg;
+    optedVal = arg;
 
     this.setState({
         organicSourceViews: organicSourceViews,
@@ -93,7 +93,7 @@ export class Dashboard extends Component {
 
 updateDashboard = event => {
     this.getData(event.value);
-    this.setState({ selectedValue: event.value });
+    this.setState({ optedVal : event.value });
 };
 
 componentDidMount() {
@@ -123,9 +123,9 @@ componentDidMount() {
             dropdownOptions = Array.from(new Set(dropdownOptions)).reverse();
             this.setState(
                 {
-                    items: rows,
-                    dropdownOptions: dropdownOptions,
-                    selectedValue: "Jan 2018"
+                    items : rows,
+                    dropdownOptions : dropdownOptions,
+                    optedVal : "Jan 2018"
                 },
                 () => this.getData("Jan 2018")
             );
@@ -139,7 +139,7 @@ componentDidMount() {
                     <Container fluid>
                         <Row className="TopHeader">
                             <Col><img height="50px" width="80px" src={logo} alt="Logo" /></Col>
-                            <Col><Dropdown className="dropdown" options={this.state.dropdownOptions} onChange={this.updateDashboard} value={this.state.selectedValue} placeholder="Select a month" /></Col>
+                            <Col><Dropdown className="dropdown" options={this.state.dropdownOptions} onChange={this.updateDashboard} value={this.state.optedVal} placeholder="Select a month" /></Col>
                         </Row>
                     </Container>
                     <br/>
