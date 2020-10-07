@@ -1,4 +1,4 @@
-import React, { Component } from 'react';
+import React from 'react';
 import '.././dashboard.css';
 
 // Step 2 - Include the react-fusioncharts component
