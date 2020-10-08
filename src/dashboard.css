@@ -1,59 +1,71 @@
-@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@300;600;700&display=swap');
-body{
-    font-family: 'Nunito', sans-serif;
-    }
-
-.TopHeader{
-    margin-bottom: 7px;
-    padding: 20px;
-    font-size: 18px;
-    background: #120c6e;
-    color: white;
-    text-align: left;
+@import url("https://fonts.googleapis.com/css2?family=Nunito:wght@300;600;700&display=swap");
+body {
+  font-family: "Nunito", sans-serif;
 }
 
-.dropdown{
-    float: right;
+.TopHeader {
+  margin-bottom: 7px;
+  padding: 20px;
+  font-size: 18px;
+  background: #120c6e;
+  color: white;
+  text-align: left;
 }
 
-.widgetwrap{
-    border-radius: 4px;
-    margin: 0 auto;
-    background: #86E3CE;
-    color: white;
-    width: 100%;
-    height: 150px;
+.dropdown {
+  float: right;
 }
 
-.chart{
-    border-radius: 4px;
-    margin: 0 auto;
-    background: #86E3CE;
-    color: white;
-    width: 100%;
-    height: 370px;
+.widgetwrap {
+  border-radius: 4px;
+  margin: 0 auto;
+  background: #86e3ce;
+  color: white;
+  width: 100%;
+  height: 150px;
 }
 
-
-.widgettitle{
-    border-bottom: 1px solid lightblue;
-    text-align: left;
-    text-transform: uppercase;
-    font-size: 13px;
-    font-weight: 600;
-    padding: 10px 10px;
+.chart {
+  border-radius: 4px;
+  margin: 0 auto;
+  background: #86e3ce;
+  color: white;
+  width: 100%;
+  height: 370px;
 }
 
-.widgetvalue .value{
-    font-size: 57px;
-    font-weight: 700;
-    text-align: left;
-    padding: 0px 7px;
-    line-height: 100%;
+.widgettitle {
+  border-bottom: 1px solid lightblue;
+  text-align: left;
+  text-transform: uppercase;
+  font-size: 13px;
+  font-weight: 600;
+  padding: 10px 10px;
 }
-.description{
-    text-align: left;
-    font-size: 22px;
-    padding-left: 13px;
-    padding-bottom: 10px;
+
+.widgetvalue .value {
+  font-size: 57px;
+  font-weight: 700;
+  text-align: left;
+  padding: 0px 7px;
+  line-height: 100%;
+}
+.description {
+  margin: 0 auto;
+  text-align: left;
+  font-size: 20px;
+  padding-left: 13px;
+  padding-right: 13px;
+  padding-bottom: 10px;
+  height: 300px;
+}
+
+.Map {
+  margin: 0 auto;
+  margin-top: 20px;
+  border-radius: 4px;
+  background: #86e3ce;
+  color: white;
+  width: 400px;
+  height: 350px;
 }
